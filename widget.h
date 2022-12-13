@@ -14,12 +14,15 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
+    int showp();
 public slots:
     int addvalue();
     int redvalue();
 
 private:
     Ui::Widget *ui;
+    Ui::Widget *p;
     int jiu;
+    
 };
 #endif // WIDGET_H
