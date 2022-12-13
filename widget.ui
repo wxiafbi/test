@@ -23,7 +23,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>130</x>
@@ -91,5 +91,43 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>pressed()</signal>
+   <receiver>Widget</receiver>
+   <slot>addvalue()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>148</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>62</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>pressed()</signal>
+   <receiver>Widget</receiver>
+   <slot>redvalue()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>136</x>
+     <y>350</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>65</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
+ <slots>
+  <signal>addsignal1()</signal>
+  <signal>signal2()</signal>
+  <slot>addvalue()</slot>
+  <slot>redvalue()</slot>
+ </slots>
 </ui>
