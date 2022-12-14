@@ -2,9 +2,9 @@
 #include "ui_widget.h"
 #include <qdebug.h>
 Widget::Widget(QWidget *parent)
-    : QWidget(parent), ui(new Ui::Widget),jiu(22)
+    : QWidget(parent), ui(new Ui::Widget),jiu(0)
 {
-    ui->setupUi(this,jiu);
+    ui->setupUi(this);
 }
 
 Widget::~Widget()
@@ -19,8 +19,6 @@ int Widget::showp()
 int Widget::addvalue()
 {
     jiu++;
-    ui->lcdNumber->close();
-    ui->lcdNumber->show();
     ui->lcdNumber->display(jiu);
     qDebug() << jiu;
     return jiu;
@@ -29,8 +27,6 @@ int Widget::addvalue()
 int Widget::redvalue()
 {
     jiu--;
-    ui->lcdNumber->close();
-    ui->lcdNumber->show();
     ui->lcdNumber->display(jiu);
     qDebug() << jiu;
     return jiu;
