@@ -108,10 +108,10 @@
   <widget class="QTableWidget" name="tableWidget">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>220</y>
-     <width>721</width>
-     <height>391</height>
+     <x>90</x>
+     <y>210</y>
+     <width>951</width>
+     <height>451</height>
     </rect>
    </property>
    <row>
@@ -184,26 +184,6 @@
      <string>新建行</string>
     </property>
    </row>
-   <column>
-    <property name="text">
-     <string>新建列</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>新建列</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>新建列</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>新建列</string>
-    </property>
-   </column>
    <column>
     <property name="text">
      <string>新建列</string>
