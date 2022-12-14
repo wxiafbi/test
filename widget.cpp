@@ -20,6 +20,7 @@ int Widget::addvalue()
 {
     jiu++;
     ui->lcdNumber->display(jiu);
+    ui->progressBar->setValue(jiu);
     qDebug() << jiu;
     return jiu;
 }
@@ -28,6 +29,7 @@ int Widget::redvalue()
 {
     jiu--;
     ui->lcdNumber->display(jiu);
+    ui->progressBar->setValue(jiu);
     qDebug() << jiu;
     return jiu;
 }
